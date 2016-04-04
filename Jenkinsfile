@@ -1,3 +1,4 @@
+/*
 job('up/upper') {
 	deliveryPipelineConfiguration("CI", "Deploy")
 
@@ -12,7 +13,8 @@ job('up/upper') {
         	}
     	}
 }
-
+**/
+return False;
 /*node {
 	
 	println "pretend to build...";
