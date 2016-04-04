@@ -1,20 +1,10 @@
-/*
-job('up/upper') {
-	deliveryPipelineConfiguration("CI", "Deploy")
+publishers {
+	downstreamParameterized {
+    		trigger('down/downer', 'SUCCESS', true) {
+    		}
+	}
+    }
 
-    	wrappers {
-        	buildName('\$PIPELINE_VERSION')
-    	}
-    
-        publishers {
-        	downstreamParameterized {
-            		trigger('down/downer', 'SUCCESS', true) {
-            		}
-        	}
-    	}
-}
-**/
-return False;
 /*node {
 	
 	println "pretend to build...";
