@@ -1,5 +1,5 @@
 publishers {
-    buildPipelineTrigger('name-of-the-manually-triggered-job') {
+    buildPipelineTrigger('downer') {
         parameters {
             propertiesFile('env.${BUILD_NUMBER}.properties')
         }
