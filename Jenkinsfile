@@ -1,6 +1,1 @@
-node {
-	
-	println "pretend to build...";
-
-	step([$class: 'FireEventStep', eventName: 'build', properties: """version=1.0"""]);
-}
+node {step([$class: 'FireEventStep', eventName: 'build', properties: """version=1.0"""]);}
